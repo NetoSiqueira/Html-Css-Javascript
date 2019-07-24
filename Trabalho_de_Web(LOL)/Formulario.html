@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario de contato</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script type="text/javascript" src="js/mtel.js"></script>
+</head>
+<body>
+
+<body>
+<div id="tudo">
+  <div class="conteudo">
+	  <div class="topnav">
+	  <a class="active" href="index.html">Home</a>
+	  <a href="sobre.html">Sobre o site</a>
+	  <a href="galeria.html">Galeria de Produto</a>
+	  <a href="formulario.html">Contato</a>
+	  </div>
+	  <img src="img/img1.jpg">
+	  </div>	
+	  	
+	  	
+	  <div id="principal">
+
+
+		<h3>Formulario de contato</h3>
+
+		<div id="form">
+  <form action="/action_page.php">
+    <label for="fname">Nome:</label>
+    <input type="text" id="fname" name="nome" placeholder="Seu nome">
+
+    <label for="lname">Email:</label>
+    <input type="text" id="lname" name="email" placeholder="Seu Email">
+    <label for="lname" >Telefone:</label>
+	<input type="text" name="telefone" onkeyup="mascara( this, mtel );" maxlength="15" />
+   
+  	<label for="country">Mensagem:</label><br>
+  	<textarea></textarea>
+    <input type="submit" value="Enviar">
+  </form>
+		</div>
+	  	
+	   
+	  </div> 
+  
+  <div id="clear"></div>
+   <div class="w3-container w3-teal">
+  <h5>Criador: Siqueira Neto</h5>
+  <p>Data de criação: 22/05/2108</p>
+  <p>Telefone: 40028922</p>
+</div>
+
+</div> <!-- Fim div#tudo -->
+
+</body>
+<script>$("#telefone").mask("(00) 0000-00009");</script>
+</html>
